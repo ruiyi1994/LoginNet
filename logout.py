@@ -1,9 +1,6 @@
 import requests
-url = "http://172.18.6.30/eportal/userV2.do"
-params = {
-    "method": "offlineAcct",
-}
-r = requests.get(url=url, params=params)
-r.encoding = "GBK"
+url = "http://172.18.3.3/F.htm"
+r = requests.get(url=url)
+r.encoding = "gb2312"
 print(r.status_code)
 
